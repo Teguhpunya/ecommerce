@@ -1,113 +1,14 @@
-import Image from 'next/image'
+import SidebarNav from '@/components/SidebarNav'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className="flex w-full h-full items-center justify-between p-4 relative bg-white/10">
+      <div className='flex max-w-screen-lg min-w-[800px] h-full p-6 relative'>
+        <SidebarNav />
+        <main className='flex ml-[300px]'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum perferendis non minus exercitationem, mollitia porro rem ullam, fugiat explicabo officia quibusdam, iure soluta? Iusto tempora vel architecto debitis porro expedita quas minus. Placeat distinctio doloremque ipsum molestias nobis labore reiciendis. Tempora voluptatibus ad quisquam ut, perspiciatis hic quae est alias mollitia eveniet eligendi exercitationem velit minus aliquam distinctio impedit accusamus. Repudiandae quae ipsum voluptates, labore aperiam soluta. Alias, vel exercitationem sapiente animi eaque est accusamus repudiandae illo amet? Facilis harum cum molestias magni asperiores blanditiis ipsum delectus sint, impedit quasi modi iure aliquam? Commodi cupiditate explicabo facilis quos quaerat facere deserunt, velit possimus. Ea, cum magni! Consectetur aliquam eaque magnam sint eius quos harum voluptas fuga hic, veniam fugiat blanditiis sit! Vero, libero dolores fugit consequuntur dolor tempora asperiores perspiciatis obcaecati eius impedit ut magni illum quae cumque possimus, rem officia architecto. Nam nesciunt suscipit aliquid nihil quisquam. Aspernatur voluptatum ullam labore laudantium dolorum rerum quas porro, earum dolorem voluptatem repellendus autem, architecto doloremque quo magnam. Nobis quisquam eius iusto maiores, eaque illo officiis harum commodi tempora aut nostrum laborum qui ex provident facere illum consequatur dolore inventore? Impedit, eligendi quibusdam. Reiciendis error corporis maiores quisquam corrupti facere voluptatum quas quia, fuga consequatur eius libero, dolores, debitis earum impedit sunt exercitationem doloremque saepe architecto iusto autem eligendi voluptate. Blanditiis magni fuga exercitationem atque quis harum quas qui? Doloremque officia sint natus reprehenderit debitis quis repellat, tempore dolores. A culpa debitis aliquid hic ipsum accusamus exercitationem dolore quam suscipit eos, illum maiores ab, repudiandae sapiente veniam maxime quaerat aut. Nam unde labore provident vero beatae sunt aspernatur alias consectetur veritatis quaerat a, vitae possimus cupiditate assumenda ratione repudiandae porro soluta quos magnam, quam repellendus pariatur? Dolor dolores consectetur rerum libero ipsam doloremque debitis maiores aperiam sequi aspernatur blanditiis, cupiditate accusantium ratione a, velit repellendus nisi! Sunt hic voluptas possimus eaque placeat delectus animi nostrum eum dolor, eos soluta totam qui ipsum ad distinctio exercitationem pariatur deleniti quos libero minima ratione quibusdam! Ipsam, optio quia autem accusantium iste illum rem quos in non obcaecati laboriosam est corporis ipsa similique tempora? Ratione blanditiis enim voluptatem commodi, temporibus hic accusamus quod sapiente fuga perferendis aspernatur exercitationem ipsum illum eos mollitia cupiditate quidem, animi sequi porro quia! Consequuntur laboriosam, numquam, tenetur eaque ab facere debitis repellendus placeat quam nostrum quisquam adipisci saepe ex, dignissimos totam asperiores. Minima aspernatur dolore similique sequi doloremque, rem repellat doloribus aliquid nesciunt atque et ab ipsum quaerat id praesentium? Voluptatibus praesentium sequi sapiente quisquam modi, error optio quibusdam earum in deleniti, laudantium voluptatem sint dolorem tenetur quis, porro similique impedit quod veritatis a ab ullam? Veritatis accusamus doloribus iure quas perspiciatis pariatur recusandae temporibus iste dicta. Possimus nam, harum explicabo maiores suscipit voluptatibus debitis, aperiam earum eius fugit natus! Animi, illum, tempora cumque quo quam eius possimus blanditiis, dolore accusamus numquam at? Quisquam, consectetur. Est facilis iste optio quia neque, fugiat delectus necessitatibus officia provident reiciendis sed accusantium inventore in temporibus a ut harum quam recusandae, veritatis voluptatum labore quidem adipisci quod commodi! Doloremque, dolor nobis! Quos, explicabo ut suscipit ex architecto, culpa nihil, magnam numquam reiciendis sed autem. Nesciunt reiciendis ullam earum officiis, voluptates veniam facere praesentium eveniet est nam, enim quisquam blanditiis esse eius? Blanditiis totam, mollitia odit aut corrupti illum magni quasi modi vero praesentium veniam impedit rerum inventore consequatur perferendis qui ipsam nemo fugiat dolorum dignissimos, nulla ullam! Quisquam aspernatur eum beatae, sunt temporibus necessitatibus itaque ducimus quidem odio deserunt praesentium, iste cupiditate corrupti a esse illo eius dicta dignissimos! Repellat ex amet dolorem dicta asperiores molestiae fuga quia tempore repudiandae, illum exercitationem deserunt ducimus, odio nihil praesentium similique vitae fugiat, sit non unde sed? Ipsam repellendus ex vel blanditiis explicabo facilis laboriosam, nobis unde quo expedita quos consequatur est corporis labore enim facere dolor autem maxime nihil in esse obcaecati? Quod beatae fugiat dignissimos ipsum quia, ratione, asperiores voluptas, tempore dolore delectus perferendis praesentium officia provident velit! Fugiat quasi cum exercitationem omnis, ipsam corrupti sapiente possimus pariatur dignissimos adipisci enim ducimus natus consectetur libero unde placeat magnam sit, aperiam laborum? Aliquid voluptatem aliquam nisi voluptatibus, hic labore modi voluptatum consectetur illo aut fugiat tempora inventore? Iure adipisci voluptatum, tenetur, dolor neque dignissimos aliquid temporibus hic, est quaerat culpa accusantium numquam voluptate modi. Sunt accusantium iure quod doloribus totam sed adipisci perferendis veniam commodi illum et quaerat voluptatibus saepe, minima ipsam eos blanditiis sit omnis modi possimus. Deleniti commodi totam ipsam est. Omnis pariatur ipsa officia, natus deleniti eos possimus necessitatibus tempore aut expedita sapiente labore commodi fugiat eligendi est earum nulla. Numquam inventore ab repellat sequi atque veritatis porro sint possimus vero, ipsum ratione non. Saepe unde exercitationem quasi delectus et blanditiis voluptatum necessitatibus. Numquam quis fuga velit eum voluptates natus nemo dolore ea omnis, quidem animi autem ipsa repellat soluta ipsam et officiis eius eligendi consectetur. Voluptatibus minus fugiat repudiandae culpa illum nobis quia ut dicta eligendi reprehenderit tempora voluptatum odit quibusdam aperiam laudantium sit, laborum unde, dolore, fuga molestiae non voluptates est cumque tempore. Reprehenderit molestiae cumque tenetur repellendus asperiores doloribus excepturi delectus corporis fugit. Hic, quia ab nostrum, numquam explicabo quaerat illo dicta tenetur sed laboriosam doloribus voluptate fugit amet iste qui quidem excepturi facere et, iure voluptas praesentium. Consectetur blanditiis aspernatur, at optio ex iste distinctio? Iure cum quae eius cupiditate, in error facere adipisci dicta dolorum saepe et ratione hic dolor! Impedit a reiciendis molestias reprehenderit quisquam sit dolor, dolores enim neque magnam? Facere hic perspiciatis doloribus consequatur maiores, itaque optio! Ipsum eveniet enim natus. Deserunt, rem modi alias consectetur est impedit mollitia fugit tempore, blanditiis possimus cum ad. Tempora eius molestias nisi expedita voluptates quasi, ducimus vel. Dignissimos qui doloremque magnam, laborum nesciunt aliquid officia minima ab excepturi nisi ut voluptatum. Ipsam iste cupiditate animi temporibus assumenda eveniet molestias deserunt veritatis iusto inventore quod voluptates possimus porro, placeat aliquam repellat, iure tenetur numquam rem voluptatum velit laboriosam. Ipsam eos eius delectus itaque? Quam numquam ratione itaque ab accusantium et, officiis molestias deserunt enim dolores minus laudantium, debitis facilis?
+        </main>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
