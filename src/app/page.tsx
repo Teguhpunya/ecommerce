@@ -1,5 +1,6 @@
 import ListProducts from '@/components/ListProducts'
 import SidebarNav from '@/components/SidebarNav'
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
