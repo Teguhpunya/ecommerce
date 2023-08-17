@@ -13,7 +13,7 @@ const NAVIGATION_ITEMS = [
 ]
 export default function SidebarNav() {
   return (
-    <section className='fixed w-72 flex flex-col h-screen space-y-2'>
+    <section className='absolute w-72 flex flex-col h-screen space-y-2'>
       {
         NAVIGATION_ITEMS.map((item) => (
           <Link
