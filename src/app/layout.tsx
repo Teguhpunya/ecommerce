@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex w-full h-full p-4 relative bg-white/10">
+        <div className="flex w-full h-full p-4 relative">
           <div className='flex min-w-[1024px] relative'>
             <SidebarNav />
             <main className='ml-[300px] flex flex-wrap relative'>

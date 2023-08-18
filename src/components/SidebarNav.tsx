@@ -16,11 +16,12 @@ const NAVIGATION_ITEMS = [
 ]
 export default function SidebarNav() {
   return (
-    <section className='fixed w-72 flex flex-col h-screen space-y-2'>
+    <section className='fixed w-72 flex flex-col h-screen p-4 space-y-4 rounded-2xl
+                        text-black/90 dark:bg-stone-800/80'>
       {
         NAVIGATION_ITEMS.map((item) => (
           <Link
-            className='bg-white/50 flex items-center justify-center space-x-2 rounded-3xl p-4'
+            className='bg-white/50 flex items-center justify-center space-x-2 rounded-2xl p-4'
             href={`${item.url.toLowerCase()}`}
             key={item.title}
           >

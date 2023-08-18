@@ -15,7 +15,7 @@ export default async function AccountButtonServer() {
 
   return (
     <Link
-      className='bg-white/50 flex items-center justify-center space-x-2 rounded-3xl p-4'
+      className='bg-white/50 flex items-center justify-center space-x-2 rounded-2xl p-4'
       href={`/account`}
     >
       <div>
