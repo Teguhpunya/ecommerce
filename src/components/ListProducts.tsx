@@ -1,20 +1,32 @@
 import React from "react";
-import ProductContainer from "./ProductContainer";
+import fetchData from "./fetch-list";
+import ListProductsClient from "./ListProductsClient";
+import SearchForm from "./SearchForm";
+import PageButtons from "./PageButtons";
 
-type Props = {}
+type Props = {
+  variables: any
+}
 type ProductData = {
   data: {
     Page: {
-      pageInfo: any,
+      pageInfo: {
+        total: number,
+        currentPage: number,
+        lastPage: number,
+        hasNextPage: true,
+        perPage: number,
+      },
       media:
       [
         {
           id: number,
           title: {
-            romaji: string
+            romaji: string,
+            english: string
           },
           coverImage: {
-            medium: string
+            large: string
           }
         }
       ]
@@ -22,67 +34,42 @@ type ProductData = {
   }
 }
 
-const fetchList = async () => {
-  const query = `
-    query {
-      Page (page: 1 perPage: 30) {
-        pageInfo {
-          total
-          currentPage
-          lastPage
-          hasNextPage
-          perPage
+const query = `
+  query ($search: String, $status: MediaStatus, $page: Int) {
+    Page (page: $page perPage: 25) {
+      pageInfo {
+        total
+        currentPage
+        lastPage
+        hasNextPage
+        perPage
+      }
+      media (search: $search, type: ANIME, sort: TRENDING_DESC, status: $status, duration_greater: 10, isAdult: false) {
+        id
+        title {
+          romaji
+          english
         }
-        media (type: ANIME, sort: TRENDING_DESC, status: RELEASING) {
-          id
-          title {
-            romaji
-          }
-          coverImage {
-            medium
-          }
+        coverImage {
+          large
         }
       }
-    }  
-  `
-  // let variables = {
-  //   search: "Fate/Zero",
-  //   page: 1,
-  //   perPage: 3
-  // }
-
-  const url = 'https://graphql.anilist.co',
-    options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({
-        query: query,
-        // variables: variables
-      })
     }
+  }  
+`
 
-  const res = await fetch(url, options)
-  const data = await res.json()
-  return data
-}
 
-export default async function ListProducts({ }: Props) {
-  const data: ProductData = await fetchList()
-  const productList = data.data.Page.media
+export default async function ListProducts({ variables }: Props) {
+  const { data }: ProductData = await fetchData(query, variables)
+  const pageInfo = data.Page.pageInfo
+  const productList = data.Page.media
 
   return (
-    productList.map(async (item) => {
-      return (
-        <ProductContainer
-          img={item.coverImage.medium}
-          title={item.title.romaji}
-          price={`${item.id}`}
-          key={item.id}
-        />
-      )
-    })
+    <>
+      <SearchForm />
+      <h1>Status airing: {variables.status}</h1>
+      <ListProductsClient pageInfo={pageInfo} productList={productList} />
+      <PageButtons pageInfo={pageInfo} variables={variables} />
+    </>
   )
 }

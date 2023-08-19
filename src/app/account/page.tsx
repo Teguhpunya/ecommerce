@@ -7,6 +7,8 @@ type Props = {}
 
 export default async function Login({ }: Props) {
   return (
-    <AuthButtonServer />
+    <div className='bg-white/50 flex items-center justify-center space-x-2 rounded-2xl p-4'>
+      <AuthButtonServer />
+    </div>
   )
 }
