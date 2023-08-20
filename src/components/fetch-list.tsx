@@ -1,9 +1,7 @@
 const fetchData = async (
   query: string,
-  variables: {
-    search: string,
-    page: number
-  }) => {
+  variables: {}
+) => {
   const url = 'https://graphql.anilist.co',
     options = {
       method: 'POST',
